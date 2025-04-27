@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CalendarDays, MapPin, Phone, Mail } from 'lucide-react';
@@ -16,7 +17,7 @@ const Index = () => {
           {/* Header section */}
           <div className="text-center mb-16">
             <h1 className="font-serif text-4xl md:text-6xl mb-6">날개짓의 서사(敍事)</h1>
-            <p className="font-serif text-lg md:text-xl">엄춘식 조류사진전</p>
+            <p className="font-serif text-lg md:text-xl">엄춘식 개인사진전에 초대합니다</p>
           </div>
 
           {/* Artist introduction */}
@@ -70,35 +71,35 @@ const Index = () => {
           </div>
 
           {/* Exhibition information */}
-          <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg mb-8">
-            <div className="space-y-6 text-base">
-              <div className="flex items-start space-x-4">
-                <CalendarDays className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
-                <div>
-                  <p className="font-serif text-lg mb-2">전시 기간</p>
-                  <p>2025년 10월 13일(월) – 10월 19일(일), 7일간, 10:00 – 17:00</p>
-                </div>
+          <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg space-y-8">
+            <div className="flex items-start space-x-3">
+              <CalendarDays className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-serif text-lg mb-2">전시 기간</h3>
+                <p>2025년 10월 13일(월) – 10월 19일(일), 7일간, 10:00 – 17:00</p>
               </div>
-              
-              <div className="flex items-start space-x-4">
-                <MapPin className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
-                <div>
-                  <p className="font-serif text-lg mb-2">전시 장소</p>
-                  <p>홍천미술관 제2관</p>
-                  <p className="text-sm text-gray-600">강원특별자치도 홍천군 홍천읍 연봉리 162-3</p>
-                </div>
+            </div>
+            
+            <div className="flex items-start space-x-3">
+              <MapPin className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-serif text-lg mb-2">전시 장소</h3>
+                <p>홍천미술관 제2관</p>
+                <p className="text-sm text-gray-600">강원특별자치도 홍천군 홍천읍 연봉리 162-3</p>
               </div>
+            </div>
 
-              <Separator className="my-4" />
-              
-              <p className="text-center font-serif text-lg mb-4">더 궁금한 점이 있으시면 언제든지 연락주세요</p>
+            <Separator className="my-6" />
+            
+            <p className="text-center font-serif text-lg mb-6">더 궁금한 점이 있으시면 언제든지 연락주세요</p>
 
-              <div className="flex items-center space-x-4">
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3">
                 <Phone className="w-6 h-6 text-gold" />
                 <p>010-9058-7008</p>
               </div>
 
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-3">
                 <Mail className="w-6 h-6 text-gold" />
                 <p>car7009@gmail.com</p>
               </div>
