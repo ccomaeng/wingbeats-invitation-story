@@ -42,14 +42,14 @@ const Index = () => {
             <blockquote className="font-handwriting text-base text-center space-y-6 my-8 relative">
               <span className="absolute left-0 top-0 text-6xl text-gold opacity-50 -ml-4 -mt-2">"</span>
               <p className="relative z-10 px-8">
-                새 한 마리가 하늘을 가르면, 그 뒤엔 수천 년 이어온 생명의 이야기가 따라옵니다. 저는 그 이야기의 첫 번째 청중이자 기록자가 되고 싶습니다.
+                새 한 마리가 하늘을 가르면, 그 뒤엔 수천 년 이어온 생명의 이야기가 따라옵니다. 저는 그 이야기의 첫 번째 청중이자 기록자가 되고 싶었습니다. - 엄춘식
               </p>
               <span className="absolute right-0 bottom-0 text-6xl text-gold opacity-50 -mr-4 -mb-2">"</span>
             </blockquote>
           </div>
 
           {/* Exhibition information */}
-          <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+          <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg ml-[5mm]">
             <h2 className="text-2xl font-serif text-[#2B5329] mb-4">전시 정보</h2>
             
             <div className="grid grid-cols-2 gap-4 text-sm">
