@@ -26,15 +26,17 @@ const Index = () => {
           {/* Artist introduction */}
           <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg mb-8">
             <h2 className="font-serif text-2xl text-center mb-8">"하늘을 가르는 찰나를 영원으로 바꾸는 셔터"</h2>
-            <p className="text-base leading-relaxed mb-8">
-              1953년 강원도 홍천에서 태어난 엄춘식은 새들의 비행에 깃든 서사를 1/1000 초의 순간 속에 포착하는 조류 전문 사진작가입니다. 
-              산·들·갯벌·초원을 가리지 않고 현장을 누비며 셔터를 누르는 그는 "순간의 울림이 곧 영원의 기록"이라는 신념으로 자연과 인간이 이어지는 깊은 이야기를 써 내려가고 있습니다.
-            </p>
+            <div className="space-y-6 text-base leading-relaxed mb-8">
+              <p>
+                1953년 강원도 홍천에서 태어난 엄춘식은 새들의 비행에 깃든 서사를 1/1000 초의 순간 속에 포착하는 조류 전문 사진작가입니다. 산·들·갯벌·초원을 가리지 않고 현장을 누비며 셔터를 누르는 그는 "순간의 울림이 곧 영원의 기록"이라는 신념으로 자연과 인간이 이어지는 깊은 이야기를 써 내려가고 있습니다.
+              </p>
+              <p>
+                그의 수십 년에 걸친 열정과 헌신이 빚어낸 작품들을 한자리에서 만나보실 수 있는 특별한 순간이 다가옵니다. 2025년 10월, 엄춘식 사진작가는 여러분을 그의 사진전에 초대합니다. 새들의 숨결과 날갯짓이 전하는 생명의 감동을 함께 나누는 시간이 되시길 바랍니다.
+              </p>
+            </div>
 
-            <Separator className="my-6" />
-
+            {/* Career information */}
             <div className="space-y-4">
-              {/* Career information */}
               <div>
                 <h3 className="font-serif text-xl mb-3">주요 경력</h3>
                 <ul className="list-disc list-inside space-y-1.5 text-sm">
