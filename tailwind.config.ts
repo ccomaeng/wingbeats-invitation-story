@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -21,7 +22,7 @@ export default {
       fontFamily: {
         serif: ['Noto Serif KR', 'serif'],
         sans: ['Noto Sans KR', 'sans-serif'],
-        handwriting: ['Gowun Batang', 'serif'],
+        handwriting: ['Nanum Pen Script', 'cursive'],
       },
       colors: {
         navy: '#1A1F2C',
