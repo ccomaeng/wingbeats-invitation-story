@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CalendarDays, MapPin, Phone, Mail } from 'lucide-react';
@@ -76,18 +75,17 @@ const Index = () => {
               <div className="flex items-start space-x-4">
                 <CalendarDays className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
                 <div>
-                  <p className="font-serif text-lg mb-2">전시 기간 및 장소</p>
-                  <p>2025년 10월 13일(월) – 10월 19일(일)</p>
-                  <p>홍천미술관 제2관</p>
-                  <p className="text-sm text-gray-600">7일간, 10:00 – 17:00</p>
+                  <p className="font-serif text-lg mb-2">전시 기간</p>
+                  <p>2025년 10월 13일(월) – 10월 19일(일), 7일간, 10:00 – 17:00</p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-4">
                 <MapPin className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
                 <div>
-                  <p className="font-serif text-lg mb-2">주소</p>
-                  <p>강원특별자치도 홍천군 홍천읍 연봉리 162-3</p>
+                  <p className="font-serif text-lg mb-2">전시 장소</p>
+                  <p>홍천미술관 제2관</p>
+                  <p className="text-sm text-gray-600">강원특별자치도 홍천군 홍천읍 연봉리 162-3</p>
                 </div>
               </div>
 
