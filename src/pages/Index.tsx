@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CalendarDays, MapPin, Phone, Mail } from 'lucide-react';
@@ -35,6 +34,8 @@ const Index = () => {
                 그의 수십 년에 걸친 열정과 헌신이 빚어낸 작품들을 한자리에서 만나보실 수 있는 특별한 순간이 다가옵니다. 2025년 10월, 엄춘식 사진작가는 여러분을 그의 사진전에 초대합니다. 새들의 숨결과 날갯짓이 전하는 생명의 감동을 함께 나누는 시간이 되시길 바랍니다.
               </p>
             </div>
+
+            <Separator className="my-6" />
 
             {/* Career information */}
             <div className="space-y-4">
