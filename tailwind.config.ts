@@ -21,7 +21,7 @@ export default {
       fontFamily: {
         serif: ['Noto Serif KR', 'serif'],
         sans: ['Noto Sans KR', 'sans-serif'],
-        handwriting: ['Nanum Pen Script', 'cursive'],
+        handwriting: ['Gowun Batang', 'serif'],
       },
       colors: {
         navy: '#1A1F2C',
