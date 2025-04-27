@@ -14,17 +14,17 @@ const Index = () => {
           transition={{ duration: 0.8 }}
           className="max-w-7xl mx-auto text-navy"
         >
-          {/* 헤더 섹션 */}
+          {/* Header section */}
           <div className="text-center mb-16">
             <h1 className="font-serif text-4xl md:text-6xl mb-6">날개짓의 서사(敍事)</h1>
             <p className="font-serif text-lg md:text-xl">엄춘식 조류사진전</p>
           </div>
 
-          {/* 메인 콘텐츠 */}
+          {/* Main content grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* 왼쪽 정보 섹션 */}
+            {/* Left information section */}
             <div className="space-y-8">
-              {/* 작가 소개 */}
+              {/* Artist introduction */}
               <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg">
                 <h2 className="font-serif text-2xl text-center mb-8">"하늘을 가르는 찰나를 영원으로 바꾸는 셔터"</h2>
                 <p className="text-base leading-relaxed mb-8">
@@ -35,6 +35,7 @@ const Index = () => {
                 <Separator className="my-8" />
 
                 <div className="space-y-6">
+                  {/* Career information */}
                   <div>
                     <h3 className="font-serif text-xl mb-4">주요 경력</h3>
                     <ul className="list-disc list-inside space-y-2 text-base">
@@ -73,14 +74,15 @@ const Index = () => {
                 </blockquote>
               </div>
 
-              {/* 전시 정보 */}
+              {/* Exhibition information */}
               <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg">
                 <div className="space-y-6 text-base">
                   <div className="flex items-start space-x-4">
                     <CalendarDays className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-serif text-lg">전시 기간</p>
+                      <p className="font-serif text-lg mb-2">전시 기간 및 장소</p>
                       <p>2025년 10월 13일(월) – 10월 19일(일)</p>
+                      <p>홍천미술관 제2관</p>
                       <p className="text-sm text-gray-600">7일간, 10:00 – 17:00</p>
                     </div>
                   </div>
@@ -88,11 +90,14 @@ const Index = () => {
                   <div className="flex items-start space-x-4">
                     <MapPin className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-serif text-lg">전시 장소</p>
-                      <p>홍천미술관 제2관</p>
-                      <p className="text-sm text-gray-600">강원특별자치도 홍천군 홍천읍 연봉리 162-3</p>
+                      <p className="font-serif text-lg mb-2">주소</p>
+                      <p>강원특별자치도 홍천군 홍천읍 연봉리 162-3</p>
                     </div>
                   </div>
+
+                  <Separator className="my-4" />
+                  
+                  <p className="text-center font-serif text-lg mb-4">더 궁금한 점이 있으시면 언제든지 연락주세요</p>
 
                   <div className="flex items-center space-x-4">
                     <Phone className="w-6 h-6 text-gold" />
@@ -107,13 +112,13 @@ const Index = () => {
               </div>
             </div>
 
-            {/* 오른쪽 지도 섹션 */}
+            {/* Right map section */}
             <div className="lg:sticky lg:top-8 h-full">
               <Map />
             </div>
           </div>
 
-          {/* 초대의 글 */}
+          {/* Invitation message */}
           <div className="text-center italic text-lg space-y-2 mt-12">
             <p>자연과 예술이 만나는 시간,</p>
             <p>작가와 함께 새들의 이야기를 나누는 자리에</p>
