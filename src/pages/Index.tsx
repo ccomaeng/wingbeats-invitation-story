@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CalendarDays, MapPin, Phone, Mail } from 'lucide-react';
+import { CalendarDays, MapPin, Phone, Mail, Copy } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 import ImageGallery from '@/components/ImageGallery';
 
 const Index = () => {
@@ -64,7 +66,21 @@ const Index = () => {
               <div>
                 <h3 className="font-semibold mb-1">전시 장소</h3>
                 <p>홍천미술관 제2관</p>
-                <p className="text-gray-600 text-xs">강원특별자치도 홍천군 홍천읍 연봉리 162-3</p>
+                <div className="flex items-center gap-2">
+                  <p className="text-gray-600 text-xs">강원특별자치도 홍천군 홍천읍 연봉리 162-3</p>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="h-6 px-2"
+                    onClick={() => {
+                      navigator.clipboard.writeText("강원특별자치도 홍천군 홍천읍 연봉리 162-3");
+                      toast.success("주소가 복사되었습니다");
+                    }}
+                  >
+                    <Copy className="w-3 h-3" />
+                    <span className="text-xs ml-1">복사</span>
+                  </Button>
+                </div>
               </div>
 
               <div>
