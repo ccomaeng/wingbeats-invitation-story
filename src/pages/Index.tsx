@@ -71,28 +71,34 @@ const Index = () => {
           </div>
 
           {/* Exhibition information */}
-          <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg space-y-8">
-            <div className="flex items-start space-x-3">
-              <CalendarDays className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-serif text-lg mb-2">전시 기간</h3>
-                <p>2025년 10월 13일(월) – 10월 19일(일), 7일간, 10:00 – 17:00</p>
-              </div>
-            </div>
+          <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-serif text-[#2B5329] mb-8">전시 정보</h2>
             
-            <div className="flex items-start space-x-3">
-              <MapPin className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="font-serif text-lg mb-2">전시 장소</h3>
-                <p>홍천미술관 제2관</p>
-                <p className="text-sm text-gray-600">강원특별자치도 홍천군 홍천읍 연봉리 162-3</p>
+                <h3 className="text-xl font-serif text-[#2B5329] mb-4">전시 기간</h3>
+                <p className="text-lg mb-2">2025년 10월 13일(월) - 10월 19일(일)</p>
+              </div>
+              
+              <div>
+                <h3 className="text-xl font-serif text-[#2B5329] mb-4">관람 시간</h3>
+                <p className="text-lg">7일간, 10:00 - 17:00</p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-serif text-[#2B5329] mb-4">전시 장소</h3>
+                <p className="text-lg mb-2">홍천미술관 제2관</p>
+                <p className="text-gray-600">강원특별자치도 홍천군 홍천읍 연봉리 162-3</p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-serif text-[#2B5329] mb-4">관람료</h3>
+                <p className="text-lg">무료</p>
               </div>
             </div>
 
-            <Separator className="my-6" />
+            <Separator className="my-8" />
             
-            <p className="text-center font-serif text-lg mb-6">더 궁금한 점이 있으시면 언제든지 연락주세요</p>
-
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Phone className="w-6 h-6 text-gold" />
