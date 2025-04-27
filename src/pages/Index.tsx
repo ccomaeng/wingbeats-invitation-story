@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CalendarDays, MapPin, Phone, Mail } from 'lucide-react';
@@ -17,7 +16,6 @@ const Index = () => {
           {/* 헤더 섹션 */}
           <div className="text-center mb-16">
             <h1 className="font-serif text-4xl md:text-6xl mb-6">날개짓의 서사(敍事)</h1>
-            {/* Removed the separate line with 敍事 */}
             <p className="text-lg md:text-xl">엄춘식 조류사진전</p>
           </div>
 
@@ -65,8 +63,8 @@ const Index = () => {
             <Separator className="my-8" />
 
             <blockquote className="italic text-lg text-center my-8">
-              "새 한 마리가 하늘을 가르면, 그 뒤엔 수천 년 이어온 생명의 이야기가 따라옵니다. 
-              저는 그 이야기의 첫 번째 청중이자 기록자가 되고 싶습니다."
+              "새 한 마리가 하늘을 가르면, 그 뒤엔 수천 년 이어온 
+              생명의 이야기가 따라옵니다. 저는 그 이야기의 첫 번째 청중이자 기록자가 되고 싶습니다."
             </blockquote>
           </div>
 
