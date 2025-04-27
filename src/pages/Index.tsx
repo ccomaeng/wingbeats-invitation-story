@@ -16,8 +16,8 @@ const Index = () => {
         >
           {/* 헤더 섹션 */}
           <div className="text-center mb-16">
-            <h1 className="font-serif text-4xl md:text-6xl mb-6">날개짓의 서사</h1>
-            <p className="font-serif text-xl md:text-2xl mb-4">敍事</p>
+            <h1 className="font-serif text-4xl md:text-6xl mb-6">날개짓의 서사(敍事)</h1>
+            {/* Removed the separate line with 敍事 */}
             <p className="text-lg md:text-xl">엄춘식 조류사진전</p>
           </div>
 
