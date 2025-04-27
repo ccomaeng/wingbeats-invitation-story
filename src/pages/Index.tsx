@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CalendarDays, MapPin, Phone, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
+import ImageGallery from '@/components/ImageGallery';
 
 const Index = () => {
   return (
@@ -15,9 +15,12 @@ const Index = () => {
           className="max-w-3xl mx-auto text-navy"
         >
           {/* Header section */}
-          <div className="text-center mb-16">
-            <p className="font-serif text-lg md:text-xl mb-6">엄춘식 개인사진전에 초대합니다</p>
-            <h1 className="font-serif text-4xl md:text-6xl">날개짓의 서사(敍事)</h1>
+          <div className="text-center mb-12">
+            <p className="font-serif text-base mb-2">엄춘식 개인사진전에 초대합니다</p>
+            <h1 className="font-serif text-4xl md:text-5xl mb-10">날개짓의 서사(敍事)</h1>
+            <div className="mb-12">
+              <ImageGallery />
+            </div>
           </div>
 
           {/* Artist introduction */}
