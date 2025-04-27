@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CalendarDays, MapPin, Phone, Mail } from 'lucide-react';
@@ -108,8 +109,7 @@ const Index = () => {
           {/* Invitation message */}
           <div className="text-center italic text-lg space-y-2 mt-12">
             <p>자연과 예술이 만나는 시간,</p>
-            <p>작가와 함께 새들의 이야기를 나누는 자리에</p>
-            <p>여러분을 진심으로 초대합니다.</p>
+            <p>엄춘식 조류사진전을 엄춘식 개인사진전에 초대합니다.</p>
           </div>
         </motion.div>
       </div>
