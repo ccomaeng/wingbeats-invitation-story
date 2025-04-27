@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CalendarDays, MapPin, Phone, Mail } from 'lucide-react';
@@ -31,45 +32,49 @@ const Index = () => {
               산·들·갯벌·초원을 가리지 않고 현장을 누비며 셔터를 누르는 그는 "순간의 울림이 곧 영원의 기록"이라는 신념으로 자연과 인간이 이어지는 깊은 이야기를 써 내려가고 있습니다.
             </p>
 
-            <Separator className="my-8" />
+            <Separator className="my-6" />
 
-            <div className="space-y-6">
+            <div className="space-y-4">
               {/* Career information */}
               <div>
-                <h3 className="font-serif text-xl mb-4">주요 경력</h3>
-                <ul className="list-disc list-inside space-y-2 text-base">
+                <h3 className="font-serif text-xl mb-3">주요 경력</h3>
+                <ul className="list-disc list-inside space-y-1.5 text-sm">
                   <li>한국사진작가협회 회원 (2015 – 현재)</li>
                   <li>조류사진분과 30대 운영위원</li>
                   <li>강원도지회 진행간사</li>
                 </ul>
               </div>
 
-              <div>
-                <h3 className="font-serif text-xl mb-4">최근 3년 활동</h3>
-                <ul className="list-disc list-inside space-y-2 text-base">
-                  <li>2022 제36회 강원사진대전 — 오색 딱따구리</li>
-                  <li>2022 제26회 강원사진전 — 두루미</li>
-                  <li>2023 생애최애사진전 — 청호반새 삼걸상</li>
-                  <li>2023 제27회 강원사진전 — 최부엉이의 외출</li>
-                  <li>2024 제28회 강원사진전 — 육추일기 우수작품상</li>
-                </ul>
-              </div>
+              {/* Recent activities and awards combined */}
+              <div className="space-y-4 text-sm">
+                <div>
+                  <h4 className="font-medium mb-2">최근 3년 활동</h4>
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>2022 제36회 강원사진대전 — 오색 딱따구리</li>
+                    <li>2022 제26회 강원사진전 — 두루미</li>
+                    <li>2023 생애최애사진전 — 청호반새 삼걸상</li>
+                    <li>2023 제27회 강원사진전 — 최부엉이의 외출</li>
+                    <li>2024 제28회 강원사진전 — 육추일기 우수작품상</li>
+                  </ul>
+                </div>
 
-              <div>
-                <h3 className="font-serif text-xl mb-4">대표 수상</h3>
-                <ul className="list-disc list-inside space-y-2 text-base">
-                  <li>춘천국제레저대회 촬영대회 가작 (2014)</li>
-                  <li>강원사진대전 삼걸상·특선 다수 (2015 – 2024)</li>
-                  <li>서울 국제평화미술제 최우수상 (2019)</li>
-                </ul>
+                <div>
+                  <h4 className="font-medium mb-2">대표 수상</h4>
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>춘천국제레저대회 촬영대회 가작 (2014)</li>
+                    <li>강원사진대전 삼걸상·특선 다수 (2015 – 2024)</li>
+                    <li>서울 국제평화미술제 최우수상 (2019)</li>
+                  </ul>
+                </div>
               </div>
             </div>
 
-            <Separator className="my-8" />
+            <Separator className="my-6" />
 
-            <blockquote className="italic text-lg text-center space-y-4 my-8">
+            <blockquote className="font-handwriting text-xl text-center space-y-4 my-8">
               <p>"새 한 마리가 하늘을 가르면, 그 뒤엔 수천 년 이어온 생명의 이야기가 따라옵니다."</p>
               <p>"저는 그 이야기의 첫 번째 청중이자 기록자가 되고 싶습니다."</p>
+              <p className="mt-4 text-right">- 엄춘식</p>
             </blockquote>
           </div>
 
