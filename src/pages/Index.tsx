@@ -50,12 +50,10 @@ const Index = () => {
 
           {/* Exhibition information */}
           <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-serif text-[#2B5329] mb-6 text-center flex items-center justify-center gap-2">
-              전시 정보 🖼️
-            </h2>
+            <h2 className="text-2xl font-serif text-[#2B5329] mb-4">전시 정보</h2>
             
             <div className="grid grid-cols-2 gap-4 text-sm">
-              <div className="text-right">
+              <div>
                 <h3 className="font-semibold mb-1">전시 기간</h3>
                 <p>2025년 10월 13일(월) - 10월 19일(일)</p>
               </div>
@@ -65,10 +63,10 @@ const Index = () => {
                 <p>7일간, 10:00 - 17:00</p>
               </div>
 
-              <div className="text-right">
+              <div>
                 <h3 className="font-semibold mb-1">전시 장소</h3>
                 <p>홍천미술관 제2관</p>
-                <div className="flex items-center justify-end gap-2">
+                <div className="flex items-center gap-2">
                   <p className="text-gray-600 text-xs">강원특별자치도 홍천군 홍천읍 연봉리 162-3</p>
                   <Button
                     variant="ghost"
@@ -87,7 +85,7 @@ const Index = () => {
 
               <div>
                 <h3 className="font-semibold mb-1">관람료</h3>
-                <p>무료 💸</p>
+                <p>무료</p>
               </div>
             </div>
 
