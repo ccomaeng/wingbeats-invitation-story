@@ -37,9 +37,15 @@ const Index = () => {
 
             <Separator className="my-6" />
 
-            <blockquote className="font-handwriting text-lg text-center space-y-4 my-8">
-              <p>"새 한 마리가 하늘을 가르면, 그 뒤엔 수천 년 이어온 생명의 이야기가 따라옵니다."</p>
-              <p>"저는 그 이야기의 첫 번째 청중이자 기록자가 되고 싶습니다."</p>
+            <blockquote className="font-handwriting text-lg text-center space-y-6 my-8 relative">
+              <span className="absolute left-0 top-0 text-6xl text-gold opacity-50 -ml-4 -mt-2">"</span>
+              <p className="relative z-10 px-8">
+                새 한 마리가 하늘을 가르면, 그 뒤엔 수천 년 이어온 생명의 이야기가 따라옵니다.
+              </p>
+              <p className="relative z-10 px-8">
+                저는 그 이야기의 첫 번째 청중이자 기록자가 되고 싶습니다.
+              </p>
+              <span className="absolute right-0 bottom-0 text-6xl text-gold opacity-50 -mr-4 -mb-2">"</span>
             </blockquote>
           </div>
 
