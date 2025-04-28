@@ -49,7 +49,7 @@ const Index = () => {
           </div>
 
           {/* Exhibition information */}
-          <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg ml-[5mm]">
+          <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg ">
             <h2 className="text-2xl font-serif text-[#2B5329] mb-4">전시 정보</h2>
             
             <div className="grid grid-cols-2 gap-4 text-sm">
