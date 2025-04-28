@@ -5,17 +5,18 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import ImageGallery from '@/components/ImageGallery';
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-beige">
+  return <div className="min-h-screen bg-beige">
       <div className="container mx-auto px-4 py-12 md:py-20">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-3xl mx-auto text-navy"
-        >
+        <motion.div initial={{
+        opacity: 0,
+        y: 20
+      }} animate={{
+        opacity: 1,
+        y: 0
+      }} transition={{
+        duration: 0.8
+      }} className="max-w-3xl mx-auto text-navy">
           {/* Header section */}
           <div className="text-center mb-12">
             <p className="font-serif text-lg mb-2">엄춘식 개인사진전</p>
@@ -41,9 +42,8 @@ const Index = () => {
 
             <blockquote className="font-handwriting text-base text-center space-y-6 my-8 relative">
               <span className="absolute left-0 top-0 text-6xl text-gold opacity-50 -ml-4 -mt-2">"</span>
-              <p className="relative z-10 px-8">
-                새 한 마리가 하늘을 가르면, 그 뒤엔 수천 년 이어온 생명의 이야기가 따라옵니다. 저는 그 이야기의 첫 번째 청중이자 기록자가 되고 싶었습니다. - 엄춘식
-              </p>
+              <p className="relative z-10 px-8">새 한 마리가 하늘을 가르면, 그 뒤엔 수천 년 이어온 생명의 이야기가 따라옵니다.
+저는 그 이야기의 첫 번째 청중이자 기록자가 되고 싶었습니다. - 엄춘식</p>
               <span className="absolute right-0 bottom-0 text-6xl text-gold opacity-50 -mr-4 -mb-2">"</span>
             </blockquote>
           </div>
@@ -67,16 +67,11 @@ const Index = () => {
                 <h3 className="font-semibold mb-1">전시 장소</h3>
                 <p>홍천미술관 제2관</p>
                 <div className="flex items-center gap-2">
-                  <p className="text-gray-600 text-xs">강원특별자치도 홍천군 홍천읍 연봉리 162-3</p>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="h-6 px-2"
-                    onClick={() => {
-                      navigator.clipboard.writeText("강원특별자치도 홍천군 홍천읍 연봉리 162-3");
-                      toast.success("주소가 복사되었습니다");
-                    }}
-                  >
+                  <p className="text-gray-600 text-xs">강원특별자치도 홍천군 홍천읍 희망로 55</p>
+                  <Button variant="ghost" size="sm" className="h-6 px-2" onClick={() => {
+                  navigator.clipboard.writeText("강원특별자치도 홍천군 홍천읍 연봉리 162-3");
+                  toast.success("주소가 복사되었습니다");
+                }}>
                     <Copy className="w-3 h-3" />
                     <span className="text-xs ml-1">복사</span>
                   </Button>
@@ -112,8 +107,6 @@ const Index = () => {
           </div>
         </motion.div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
