@@ -52,7 +52,7 @@ const Index = () => {
           <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg ">
             <h2 className="text-2xl font-serif text-[#2B5329] mb-4">전시 정보</h2>
             
-            <div className="grid grid-cols-2 gap-4 text-sm pl-6 border-l-4 border-gold-500">
+            <div className="grid grid-cols-2 gap-4 text-sm pl-5 border-gold px-[30px]">
               <div>
                 <h3 className="font-semibold mb-1">전시 기간</h3>
                 <p>2025년 10월 13일(월) - 10월 19일(일)</p>
