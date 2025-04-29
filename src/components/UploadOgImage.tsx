@@ -4,7 +4,11 @@ import { supabase } from '@/lib/supabase';
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
-const UploadOgImage = () => {
+interface UploadOgImageProps {
+  onSuccess?: () => void;
+}
+
+const UploadOgImage = ({ onSuccess }: UploadOgImageProps) => {
   const [uploading, setUploading] = useState(false);
   
   const uploadImage = async (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -33,12 +37,40 @@ const UploadOgImage = () => {
       }
       
       toast.success('OG 이미지가 성공적으로 업로드되었습니다.');
+      
+      // onSuccess 콜백이 있으면 호출
+      if (onSuccess) {
+        onSuccess();
+      }
+      
+      // 브라우저 캐시 갱신을 위해 URL에 타임스탬프 추가
+      const timestamp = Date.now();
+      const { data } = supabase.storage
+        .from('wingbeats')
+        .getPublicUrl(`main-image.${fileExt}?t=${timestamp}`);
+      
+      // 메타태그 업데이트
+      updateOgMetaTags(data?.publicUrl);
+      
     } catch (error) {
       toast.error('오류가 발생했습니다.');
       console.error('Error uploading image:', error);
     } finally {
       setUploading(false);
     }
+  };
+  
+  // 메타태그 업데이트 함수
+  const updateOgMetaTags = (imageUrl?: string) => {
+    if (!imageUrl) return;
+    
+    // OG 이미지 메타태그 업데이트
+    const ogImageTags = document.querySelectorAll('meta[property="og:image"], meta[property="og:image:secure_url"], meta[name="twitter:image"]');
+    ogImageTags.forEach(tag => {
+      tag.setAttribute('content', imageUrl);
+    });
+    
+    console.log('OG 메타태그가 업데이트되었습니다:', imageUrl);
   };
   
   return (
