@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CalendarDays, MapPin, Phone, Mail, Copy } from 'lucide-react';
@@ -5,6 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import ImageGallery from '@/components/ImageGallery';
+
 const Index = () => {
   return <div className="min-h-screen bg-beige">
       <div className="container mx-auto px-4 py-12 md:py-20">
@@ -29,7 +31,7 @@ const Index = () => {
           {/* Artist introduction */}
           <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg mb-8">
             <h2 className="font-serif text-2xl text-center mb-8">"하늘을 가르는 찰나를 영원으로 바꾸는 셔터"</h2>
-            <div className="space-y-6 text-base leading-relaxed mb-8">
+            <div className="space-y-6 text-base leading-relaxed mb-8 pl-6 border-l-4 border-gold">
               <p>
                 1953년 강원도 홍천에서 태어난 엄춘식은 새들의 비행에 깃든 서사를 1/1000 초의 순간 속에 포착하는 조류 전문 사진작가입니다. 산·들·갯벌·초원을 가리지 않고 현장을 누비며 셔터를 누르는 그는 "순간의 울림이 곧 영원의 기록"이라는 신념으로 자연과 인간이 이어지는 깊은 이야기를 써 내려가고 있습니다.
               </p>
@@ -52,7 +54,7 @@ const Index = () => {
           <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg ">
             <h2 className="text-2xl font-serif text-[#2B5329] mb-4">전시 정보</h2>
             
-            <div className="grid grid-cols-2 gap-4 text-sm">
+            <div className="grid grid-cols-2 gap-4 text-sm pl-6 border-l-4 border-red-500">
               <div>
                 <h3 className="font-semibold mb-1">전시 기간</h3>
                 <p>2025년 10월 13일(월) - 10월 19일(일)</p>
@@ -82,19 +84,18 @@ const Index = () => {
                 <h3 className="font-semibold mb-1">관람료</h3>
                 <p>무료</p>
               </div>
-            </div>
-
-            <Separator className="my-4" />
             
-            <div className="space-y-2 text-sm">
-              <div className="flex items-center space-x-2">
-                <Phone className="w-4 h-4 text-gold" />
-                <p>010-9058-7008</p>
-              </div>
 
-              <div className="flex items-center space-x-2">
-                <Mail className="w-4 h-4 text-gold" />
-                <p>car7009@gmail.com</p>
+              <div className="space-y-2 text-sm col-span-2">
+                <div className="flex items-center space-x-2">
+                  <Phone className="w-4 h-4 text-gold" />
+                  <p>010-9058-7008</p>
+                </div>
+
+                <div className="flex items-center space-x-2">
+                  <Mail className="w-4 h-4 text-gold" />
+                  <p>car7009@gmail.com</p>
+                </div>
               </div>
             </div>
           </div>
