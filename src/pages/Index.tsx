@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CalendarDays, MapPin, Phone, Mail, Copy } from 'lucide-react';
@@ -6,7 +5,6 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import ImageGallery from '@/components/ImageGallery';
-
 const Index = () => {
   return <div className="min-h-screen bg-beige">
       <div className="container mx-auto px-4 py-12 md:py-20">
@@ -54,7 +52,7 @@ const Index = () => {
           <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg ">
             <h2 className="text-2xl font-serif text-[#2B5329] mb-4">전시 정보</h2>
             
-            <div className="grid grid-cols-2 gap-4 text-sm pl-6 border-l-4 border-red-500">
+            <div className="grid grid-cols-2 gap-4 text-sm pl-6 border-l-4 border-gold-500">
               <div>
                 <h3 className="font-semibold mb-1">전시 기간</h3>
                 <p>2025년 10월 13일(월) - 10월 19일(일)</p>
