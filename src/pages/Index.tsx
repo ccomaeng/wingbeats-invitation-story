@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CalendarDays, MapPin, Phone, Mail, Copy } from 'lucide-react';
@@ -69,7 +70,7 @@ const Index = () => {
                 <div className="flex items-center gap-2">
                   <p className="text-gray-600 text-xs">강원특별자치도 홍천군 홍천읍 희망로 55</p>
                   <Button variant="ghost" size="sm" className="h-6 px-2" onClick={() => {
-                  navigator.clipboard.writeText("강원특별자치도 홍천군 홍천읍 연봉리 162-3");
+                  navigator.clipboard.writeText("강원특별자치도 홍천군 홍천읍 희망로 55");
                   toast.success("주소가 복사되었습니다");
                 }}>
                     <Copy className="w-3 h-3" />
