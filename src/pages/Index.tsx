@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CalendarDays, MapPin, Phone, Mail, Copy } from 'lucide-react';
@@ -5,6 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import ImageGallery from '@/components/ImageGallery';
+
 const Index = () => {
   return <div className="min-h-screen bg-beige">
       <div className="container mx-auto px-4 py-12 md:py-20">
@@ -49,52 +51,54 @@ const Index = () => {
           </div>
 
           {/* Exhibition information */}
-          <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg ">
+          <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-serif text-[#2B5329] mb-4">전시 정보</h2>
             
-            <div className="grid grid-cols-2 gap-4 text-sm pl-6 border-l-4 border-gold-500">
-              <div>
-                <h3 className="font-semibold mb-1">전시 기간</h3>
-                <p>2025년 10월 13일(월) - 10월 19일(일)</p>
-              </div>
+            <div className="mb-8 pl-6 border-l-4 border-red-500">
+              <dl className="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                  <dt className="font-medium">전시 기간</dt>
+                  <dd>2025년 10월 13일(월) - 10월 19일(일)</dd>
+                </div>
+                
+                <div>
+                  <dt className="font-medium">관람 시간</dt>
+                  <dd>7일간, 10:00 - 17:00</dd>
+                </div>
+
+                <div>
+                  <dt className="font-medium">전시 장소</dt>
+                  <dd>홍천미술관 제2관</dd>
+                  <div className="flex items-center gap-2">
+                    <p className="text-gray-600 text-xs">강원특별자치도 홍천군 홍천읍 희망로 55</p>
+                    <Button variant="ghost" size="sm" className="h-6 px-2" onClick={() => {
+                    navigator.clipboard.writeText("강원특별자치도 홍천군 홍천읍 연봉리 162-3");
+                    toast.success("주소가 복사되었습니다");
+                  }}>
+                      <Copy className="w-3 h-3" />
+                      <span className="text-xs ml-1">복사</span>
+                    </Button>
+                  </div>
+                </div>
+
+                <div>
+                  <dt className="font-medium">관람료</dt>
+                  <dd>무료</dd>
+                </div>
               
-              <div>
-                <h3 className="font-semibold mb-1">관람 시간</h3>
-                <p>7일간, 10:00 - 17:00</p>
-              </div>
 
-              <div>
-                <h3 className="font-semibold mb-1">전시 장소</h3>
-                <p>홍천미술관 제2관</p>
-                <div className="flex items-center gap-2">
-                  <p className="text-gray-600 text-xs">강원특별자치도 홍천군 홍천읍 희망로 55</p>
-                  <Button variant="ghost" size="sm" className="h-6 px-2" onClick={() => {
-                  navigator.clipboard.writeText("강원특별자치도 홍천군 홍천읍 연봉리 162-3");
-                  toast.success("주소가 복사되었습니다");
-                }}>
-                    <Copy className="w-3 h-3" />
-                    <span className="text-xs ml-1">복사</span>
-                  </Button>
+                <div className="space-y-2 text-sm col-span-2">
+                  <div className="flex items-center space-x-2">
+                    <Phone className="w-4 h-4 text-gold" />
+                    <p>010-9058-7008</p>
+                  </div>
+
+                  <div className="flex items-center space-x-2">
+                    <Mail className="w-4 h-4 text-gold" />
+                    <p>car7009@gmail.com</p>
+                  </div>
                 </div>
-              </div>
-
-              <div>
-                <h3 className="font-semibold mb-1">관람료</h3>
-                <p>무료</p>
-              </div>
-            
-
-              <div className="space-y-2 text-sm col-span-2">
-                <div className="flex items-center space-x-2">
-                  <Phone className="w-4 h-4 text-gold" />
-                  <p>010-9058-7008</p>
-                </div>
-
-                <div className="flex items-center space-x-2">
-                  <Mail className="w-4 h-4 text-gold" />
-                  <p>car7009@gmail.com</p>
-                </div>
-              </div>
+              </dl>
             </div>
           </div>
 
