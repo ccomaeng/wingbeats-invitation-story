@@ -89,6 +89,9 @@ const UploadOgImage = ({ onSuccess }: UploadOgImageProps) => {
           />
         </label>
       </div>
+      <p className="text-sm text-gray-500 mt-2">
+        메타 미리보기를 위한 이미지를 업로드합니다. 권장 크기: 1200x630px
+      </p>
     </div>
   );
 };
